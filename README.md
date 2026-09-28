@@ -99,6 +99,9 @@ If you use this dataset or associated tooling in your academic work, please cite
 ```
 
 ## Acknowledgements
+* This research was carried out using equipment sponsored by MyChinaPal Sp. z o.o.
+* The authors thank the Centre of Physical Education and Sport (SWFiS) of AGH University of Krakow for making the facility available free of charge for the recording during data acquisition.
+* The authors would like to thank all the participants for their time and voluntary participation in this data acquisition.
 
 ## Authors & Affiliation
 * **Research Group**: Artificial Intelligence in Medicine Student Research Club
