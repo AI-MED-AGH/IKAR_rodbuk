@@ -1,7 +1,7 @@
 # Intelligent Kinetic Activity Recognition (IKAR) - Fall Detection Dataset
 
 ## Introduction
-Falls among elderly individuals represent a major global public health concern, affecting approximately one in three people aged 65 and older. These incidents often lead to severe injuries, prolonged immobilization, and long-term loss of personal autonomy. Key physiological and clinical risk factors include neurological disorders, joint degenerative conditions, dizzy spells, medication complications, and impaired balance control.
+Falls among elderly individuals represent a major global public health concern, affecting approximately one in three people aged 65 and older (according to the World Health Organization - WHO). These incidents often lead to severe injuries, prolonged immobilization, and long-term loss of personal autonomy. Key physiological and clinical risk factors include neurological disorders, joint degenerative conditions, dizzy spells, medication complications, and impaired balance control.
 
 The aftermath of fall incidents encompasses both severe physical trauma—such as bone fractures, traumatic brain injuries, and spinal damage—and debilitating psychosocial consequences (specifically post-fall syndrome, which leads to chronic fear of falling and progressive reduction in physical activity).
 
@@ -58,7 +58,8 @@ IKAR_Dataset/
 * **File Naming Convention**: Files are named according to their category and a sequential integer ID: `[category]_[id].[ext]`. For example, the video `fainting_3.mp4` corresponds directly to the annotation file `fainting_3.json`.
 
 ## Codebook
-Each annotation file contains a root JSON object with two primary keys: `media_attributes` and `annotations`.
+Each annotation file contains a root JSON object with two primary keys: `media_attributes` and `annotations`. 
+*Note: The values in the "Example" columns below are strictly illustrative samples from a single file, not fixed constants for the entire dataset.*
 
 ### 1. Video Metadata (`media_attributes`)
 | Variable | Description | Data Type | Example |
@@ -72,25 +73,24 @@ Each annotation file contains a root JSON object with two primary keys: `media_a
 | `duration` | Total video duration in seconds | Float | `4.567` |
 
 ### 2. Bounding Box Coordinates (`annotations.frames`)
-The `frames` array contains frame-indexed objects mapping each chronological frame number (as a numeric string key) to its bounding box geometry:
+The `frames` array contains frame-indexed objects mapping each chronological frame number (as a numeric string key) to its bounding box geometry (using YOLO format):
 
 | Variable | Description | Data Type | Example |
 | :--- | :--- | :--- | :--- |
-| `top` | Vertical coordinate of the top edge (Y-axis distance from top in px) | Float | `65.0` |
-| `left` | Horizontal coordinate of the left edge (X-axis distance from left in px) | Float | `452.0` |
-| `height` | Height dimension of the bounding box envelope in px | Float | `435.0` |
-| `width` | Width dimension of the bounding box envelope in px | Float | `126.0` |
+| `x_center` | Horizontal coordinate of the bounding box center in px | Float | `452.0` |
+| `y_center` | Vertical coordinate of the bounding box center in px | Float | `65.0` |
+| `w` | Width dimension of the bounding box in px | Float | `126.0` |
+| `h` | Height dimension of the bounding box in px | Float | `435.0` |
 
 ## License
-* **Dataset**: Distributed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license. You are free to share, copy, and adapt the material as long as appropriate credit is attributed to the original authors.
-* **Code**: Companion tooling and automation scripts are distributed under the [MIT License](LICENSE).
+* **Dataset & Code**: This repository, including the dataset, companion tooling, and automation scripts, is distributed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license. You are free to share, copy, and adapt the material as long as appropriate credit is attributed to the original authors.
 
 ## Citation
 If you use this dataset or associated tooling in your academic work, please cite it as follows:
 
 ```bibtex
 @misc{ikar_dataset_2026,
-  author = {Artificial Intelligence in Medicine AGH},
+  author = {Kamil Opyrchał and Łukasz Burliga and Maja Zielińska and Karolina Zając and Maria Potwora and Martyna Jagoda and Dominik Mika and Franciszek Kubala},
   title = {{IKAR: Intelligent Kinetic Activity Recognition - Fall Detection Dataset}},
   year = {2026},
   publisher = {RODBUK Cracow Open Research Data Repository},
@@ -104,6 +104,7 @@ If you use this dataset or associated tooling in your academic work, please cite
 * The authors would like to thank all the participants for their time and voluntary participation in this data acquisition.
 
 ## Authors & Affiliation
+* **Authors**: Kamil Opyrchał, Łukasz Burliga, Maja Zielińska, Karolina Zając, Maria Potwora, Martyna Jagoda, Dominik Mika, Franciszek Kubala
 * **Research Group**: Artificial Intelligence in Medicine Student Research Club
 * **Department**: Department of Biocybernetics and Biomedical Engineering
 * **Faculty**: Faculty of Electrical Engineering, Automatics, Computer Science and Biomedical Engineering
@@ -112,4 +113,4 @@ If you use this dataset or associated tooling in your academic work, please cite
 ## Contact
 * **Affiliation**: Artificial Intelligence in Medicine Student Research Club, AGH University of Krakow
 * **Primary Contact**: Franek Kubala (frkubala@student.agh.edu.pl)
-* **Repository Issues & Feedback**: Please report any anomalies, data integrity issues, or schema errors via the official project issue tracker or directly via email.
+* **Repository Issues & Feedback**: Please report any anomalies, data integrity issues, or schema errors exclusively via the official project issue tracker.
