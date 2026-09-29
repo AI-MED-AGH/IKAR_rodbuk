@@ -112,5 +112,5 @@ If you use this dataset or associated tooling in your academic work, please cite
 
 ## Contact
 * **Affiliation**: Artificial Intelligence in Medicine Student Research Club, AGH University of Krakow
-* **Primary Contact**: Franek Kubala (frkubala@student.agh.edu.pl)
+* **Primary Contact**: Franek Kubala
 * **Repository Issues & Feedback**: Please report any anomalies, data integrity issues, or schema errors exclusively via the official project issue tracker.
