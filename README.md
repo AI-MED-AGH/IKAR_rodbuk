@@ -1,5 +1,9 @@
 # Intelligent Kinetic Activity Recognition (IKAR) - Fall Detection Dataset
 
+[![DOI](https://img.shields.io/badge/DOI-10.58032%2FAGH%2FA1NZPE-blue.svg)](https://doi.org/10.58032/AGH/A1NZPE)
+
+**Official Dataset Access & Citation:** [https://doi.org/10.58032/AGH/A1NZPE](https://doi.org/10.58032/AGH/A1NZPE)
+
 ## Introduction
 Falls among elderly individuals represent a major global public health concern, affecting approximately one in three people aged 65 and older (according to the World Health Organization - WHO). These incidents often lead to severe injuries, prolonged immobilization, and long-term loss of personal autonomy. Key physiological and clinical risk factors include neurological disorders, joint degenerative conditions, dizzy spells, medication complications, and impaired balance control.
 
@@ -94,7 +98,8 @@ If you use this dataset or associated tooling in your academic work, please cite
   title = {{IKAR: Intelligent Kinetic Activity Recognition - Fall Detection Dataset}},
   year = {2026},
   publisher = {RODBUK Cracow Open Research Data Repository},
-  doi = {[DOI]}
+  doi = {10.58032/AGH/A1NZPE},
+  url = {https://doi.org/10.58032/AGH/A1NZPE}
 }
 ```
 
