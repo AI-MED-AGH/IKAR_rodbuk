@@ -115,12 +115,12 @@ If you use this dataset or associated tooling in your academic work, please cite
 * **Faculty**: Faculty of Electrical Engineering, Automatics, Computer Science and Biomedical Engineering
 * **Institution**: AGH University of Krakow, al. A. Mickiewicza 30, 30-059 Krakow, Poland
 
-## Licence
-The dataset is available under the
-[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) licence.
-The content of this repository (description, documentation) is released under the same licence.
-
 ## Contact
 * **Affiliation**: Artificial Intelligence in Medicine Student Research Club, AGH University of Krakow
 * **Primary Contact**: Franek Kubala
 * **Repository Issues & Feedback**: Please report any anomalies, data integrity issues, or schema errors exclusively via the official project issue tracker.
+
+## Licence
+The dataset is available under the
+[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) licence.
+The content of this repository (description, documentation) is released under the same licence.
